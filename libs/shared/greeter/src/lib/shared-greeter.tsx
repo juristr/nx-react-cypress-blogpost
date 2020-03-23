@@ -9,7 +9,7 @@ export interface SharedGreeterProps {
 export const SharedGreeter = (props: SharedGreeterProps) => {
   return (
     <div>
-      <h1 data-cy="greeting">Hi there, {props.personName}!</h1>
+      <h1 data-cy="greeting">Hi there, {props.personName}! How's your day?</h1>
     </div>
   );
 };
