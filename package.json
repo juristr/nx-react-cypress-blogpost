@@ -36,7 +36,7 @@
     "@nrwl/eslint-plugin-nx": "9.1.2",
     "@nrwl/jest": "9.1.2",
     "@nrwl/react": "9.1.2",
-    "@nrwl/storybook": "*",
+    "@nrwl/storybook": "9.1.2",
     "@nrwl/web": "9.1.2",
     "@nrwl/workspace": "9.1.2",
     "@testing-library/react": "9.4.0",
