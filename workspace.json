@@ -19,7 +19,9 @@
               "apps/myfirstreactapp/src/favicon.ico",
               "apps/myfirstreactapp/src/assets"
             ],
-            "styles": ["apps/myfirstreactapp/src/styles.scss"],
+            "styles": [
+              "apps/myfirstreactapp/src/styles.scss"
+            ],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -68,7 +70,10 @@
               "apps/myfirstreactapp/tsconfig.app.json",
               "apps/myfirstreactapp/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/myfirstreactapp/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/myfirstreactapp/**"
+            ]
           }
         },
         "test": {
@@ -104,8 +109,13 @@
           "options": {
             "linter": "eslint",
             "config": "apps/myfirstreactapp-e2e/.eslintrc",
-            "tsConfig": ["apps/myfirstreactapp-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/myfirstreactapp-e2e/**"]
+            "tsConfig": [
+              "apps/myfirstreactapp-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/myfirstreactapp-e2e/**"
+            ]
           }
         }
       }
@@ -125,7 +135,10 @@
               "libs/shared/e2e-utils/tsconfig.lib.json",
               "libs/shared/e2e-utils/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/e2e-utils/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/e2e-utils/**"
+            ]
           }
         },
         "test": {
@@ -153,7 +166,10 @@
               "libs/shared/greeter/tsconfig.lib.json",
               "libs/shared/greeter/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/greeter/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/greeter/**"
+            ]
           }
         },
         "test": {
@@ -162,6 +178,68 @@
             "jestConfig": "libs/shared/greeter/jest.config.js",
             "tsConfig": "libs/shared/greeter/tsconfig.spec.json",
             "passWithNoTests": true
+          }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/shared/greeter/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@nrwl/storybook:build",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "outputPath": "dist/storybook/shared-greeter",
+            "config": {
+              "configFolder": "libs/shared/greeter/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        }
+      }
+    },
+    "shared-greeter-e2e": {
+      "root": "apps/shared-greeter-e2e",
+      "sourceRoot": "apps/shared-greeter-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/shared-greeter-e2e/cypress.json",
+            "tsConfig": "apps/shared-greeter-e2e/tsconfig.e2e.json",
+            "devServerTarget": "shared-greeter:storybook"
+          },
+          "configurations": {
+            "ci": {
+              "devServerTarget": "shared-greeter:storybook:ci"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/shared-greeter-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/shared-greeter-e2e/**"
+            ]
           }
         }
       }

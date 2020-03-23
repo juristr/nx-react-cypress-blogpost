@@ -16,13 +16,21 @@
     },
     "myfirstreactapp-e2e": {
       "tags": [],
-      "implicitDependencies": ["myfirstreactapp"]
+      "implicitDependencies": [
+        "myfirstreactapp"
+      ]
     },
     "shared-e2e-utils": {
       "tags": []
     },
     "shared-greeter": {
       "tags": []
+    },
+    "shared-greeter-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "shared-greeter"
+      ]
     }
   }
 }

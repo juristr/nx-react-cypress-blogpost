@@ -1238,6 +1238,18 @@
     eslint-plugin-react "^7.18.3"
     eslint-plugin-react-hooks "^2.4.0"
 
+"@nrwl/storybook@^9.1.2":
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-9.1.2.tgz#ec4e05ab3ba8b90d01567d3b46d3a3674510cb87"
+  integrity sha512-3QZTidkhtdUTsxdZGV2kalp95vpx9V99NuYYmeXX1Ob9pcvA2Q6lIooGUyrwhlf6J1SZA16Fds5JiGcttkRSGw==
+  dependencies:
+    "@nrwl/cypress" "9.1.2"
+    core-js "^3.2.1"
+    tree-kill "1.2.2"
+    ts-loader "5.3.1"
+    tsconfig-paths-webpack-plugin "3.2.0"
+    webpack-node-externals "1.7.2"
+
 "@nrwl/tao@9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-9.1.2.tgz#823b45def6b1d8dd005ff700a6e40b9fd970b445"
@@ -9001,7 +9013,7 @@ request@^2.83.0, request@^2.87.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-"request@github:cypress-io/request#b5af0d1fa47eec97ba980cde90a13e69a2afcd16":
+request@cypress-io/request#b5af0d1fa47eec97ba980cde90a13e69a2afcd16:
   version "2.88.1"
   resolved "https://codeload.github.com/cypress-io/request/tar.gz/b5af0d1fa47eec97ba980cde90a13e69a2afcd16"
   dependencies:
@@ -10336,6 +10348,17 @@ ts-jest@24.0.0:
     resolve "1.x"
     semver "^5.5"
     yargs-parser "10.x"
+
+ts-loader@5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.3.1.tgz#70614c8ec4354a9c8b89c9f97b2becb7a98a3980"
+  integrity sha512-fDDgpBH3SR8xlt2MasLdz3Yy611PQ/UY/KGyo7TgXhTRU/6sS8uGG0nJYnU1OdFBNKcoYbId1UTNaAOUn+i41g==
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^4.0.0"
+    loader-utils "^1.0.2"
+    micromatch "^3.1.4"
+    semver "^5.0.1"
 
 ts-loader@5.4.5, ts-loader@^5.3.1:
   version "5.4.5"
