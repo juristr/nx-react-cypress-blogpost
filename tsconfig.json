@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mynxworkspace/shared/e2e-utils": ["libs/shared/e2e-utils/src/index.ts"]
+      "@mynxworkspace/shared/e2e-utils": ["libs/shared/e2e-utils/src/index.ts"],
+      "@mynxworkspace/shared/greeter": ["libs/shared/greeter/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

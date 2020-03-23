@@ -20,6 +20,9 @@
     },
     "shared-e2e-utils": {
       "tags": []
+    },
+    "shared-greeter": {
+      "tags": []
     }
   }
 }
