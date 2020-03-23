@@ -16,9 +16,7 @@
     },
     "myfirstreactapp-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "myfirstreactapp"
-      ]
+      "implicitDependencies": ["myfirstreactapp"]
     },
     "shared-e2e-utils": {
       "tags": []
@@ -28,9 +26,14 @@
     },
     "shared-greeter-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "shared-greeter"
-      ]
+      "implicitDependencies": ["shared-greeter"]
+    },
+    "my2ndreactapp": {
+      "tags": []
+    },
+    "my2ndreactapp-e2e": {
+      "tags": [],
+      "implicitDependencies": ["my2ndreactapp"]
     }
   }
 }
