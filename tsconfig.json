@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mynxworkspace/shared/e2e-utils": ["libs/shared/e2e-utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,5 +1,3 @@
-import { getGreeting } from '../support/app.po';
-
 describe('myfirstreactapp', () => {
   beforeEach(() => cy.visit('/'));
 
@@ -7,6 +5,6 @@ describe('myfirstreactapp', () => {
     // Custom command example, see `../support/commands.ts` file
     cy.login('my-email@something.com', 'myPassword');
 
-    cy.get('[data-cy="page-title"]').contains('Welcome to myfirstreactapp!');
+    cy.getEl('page-title').contains('Welcome to myfirstreactapp!');
   });
 });

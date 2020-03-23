@@ -17,6 +17,9 @@
     "myfirstreactapp-e2e": {
       "tags": [],
       "implicitDependencies": ["myfirstreactapp"]
+    },
+    "shared-e2e-utils": {
+      "tags": []
     }
   }
 }
