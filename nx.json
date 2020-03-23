@@ -1,0 +1,22 @@
+{
+  "npmScope": "mynxworkspace",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "myfirstreactapp": {
+      "tags": []
+    },
+    "myfirstreactapp-e2e": {
+      "tags": [],
+      "implicitDependencies": ["myfirstreactapp"]
+    }
+  }
+}
